@@ -151,6 +151,10 @@
   gap: var(--spacing-6);
 }
 
+.p0 {
+  padding: 0;
+}
+
 .p1 {
   padding: var(--spacing-1);
 }
@@ -346,6 +350,10 @@
 
 .hFit {
   height: fit-content;
+}
+
+.relative {
+  position: relative;
 }
 
 

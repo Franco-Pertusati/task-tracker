@@ -1,0 +1,12 @@
+i {
+  width: 34px;
+  height: 34px;
+  background-color: var(--bg-light);
+  border-left: solid 1px var(--border);
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  overflow: hidden;
+}

@@ -6,3 +6,11 @@
 .dayBtn:hover {
   background-color: var(--bg);
 }
+
+.dayBtn * {
+  color: var(--text-muted);
+}
+
+.currentDay * {
+ color: var(--text);
+}

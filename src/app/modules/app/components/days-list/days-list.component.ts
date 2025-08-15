@@ -1,8 +1,9 @@
+import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-days-list',
-  imports: [],
+  imports: [NgClass],
   templateUrl: './days-list.component.html',
   styleUrl: './days-list.component.css'
 })

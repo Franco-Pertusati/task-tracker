@@ -1,0 +1,13 @@
+<div class="hFull wFull flex flexCol gap3">
+  <div class="flex wFull gap3">
+    <div class="wFull">
+      <app-button [style]="'wide'" [label]="'Add Task'" [icon]="'add'" />
+    </div>
+    <app-button [style]="'filled'" [icon]="'more_vert'" />
+  </div>
+  <div class="flex flexCol gap3">
+    @for (task of tasksList; track $index) {
+      <app-task [type]="true" [task]="task" />
+    }
+  </div>
+</div>
