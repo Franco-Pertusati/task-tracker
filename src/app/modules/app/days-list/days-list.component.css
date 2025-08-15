@@ -1,0 +1,8 @@
+.dayBtn {
+  width: 76px;
+  height: 76px;
+}
+
+.dayBtn:hover {
+  background-color: var(--bg);
+}

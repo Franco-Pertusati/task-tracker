@@ -1,0 +1,13 @@
+.appContainer {
+  display: grid;
+  grid-template-columns: 0.618fr 1fr;
+  width: 1600px;
+  height: 580px;
+  border-radius: 18px;
+}
+
+.testContainer {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
