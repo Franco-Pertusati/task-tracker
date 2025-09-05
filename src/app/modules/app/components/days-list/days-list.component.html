@@ -1,8 +1,0 @@
-<div class="daysListContainer  flex flexCol gap3">
-  @for (day of weekDays; track $index) {
-    <div class="dayBtn flex flexCol justEvenly rounded6" [ngClass]="$index === 0? 'currentDay card' : ''">
-      <span class="titleText textCenter">{{ day.num }}</span>
-      <span class="textCenter">{{ day.day }}</span>
-    </div>
-  }
-</div>

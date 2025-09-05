@@ -1,0 +1,15 @@
+.container {
+  display: grid;
+  grid-template-columns: 102px 1fr .6fr;
+  grid-template-rows: min-content 1fr;
+  gap: var(--spacing-3);
+}
+
+.navContainer {
+  grid-column: 3 span;
+  height: 64px;
+}
+
+.card {
+  padding: 0;
+}
