@@ -116,6 +116,10 @@
   flex-direction: column;
 }
 
+.flexGrow {
+  flex-grow: 1;
+}
+
 .justCenter {
   justify-content: center;
 }
@@ -142,6 +146,10 @@
 
 .itemsCenter {
   align-items: center;
+}
+
+.flexWrap {
+  flex-wrap: wrap;
 }
 
 .gap1 {
@@ -402,4 +410,24 @@
 
 .formDialog {
   width: 100%;
+}
+
+.overflowHidden {
+  overflow: hidden;
+}
+
+.layoutWidth {
+  max-width: 1080px;
+  width: 100%;
+}
+
+.topBar {
+  width: 100%;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: center;
+}
+
+.border {
+  border: solid 1px var(--border);
 }

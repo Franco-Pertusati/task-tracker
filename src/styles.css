@@ -15,8 +15,19 @@
   --text: hsl(0, 0%, 90%);
   --text-muted: hsl(0, 0%, 75%);
 
-  --primary: #f05d38;
-  --secondary: #ffbd00;
+--primary-50: #fcf6f0;
+--primary-100: #f7e9dd;
+--primary-200: #eed0ba;
+--primary-300: #e5b698;
+--primary-400: #d68861;
+--primary: #cd6a42;
+--primary-600: #bf5437;
+--primary-700: #9f422f;
+--primary-800: #80372c;
+--primary-900: #682f26;
+--primary-950: #371713;
+
+  --red: hsl(355, 78%, 56%);
 
   --spacing-1: 2px;
   --spacing-2: 4px;
@@ -24,8 +35,35 @@
   --spacing-4: 8px;
   --spacing-5: 10px;
   --spacing-6: 12px;
+}
 
-  --red: #E63946
+[data-theme='dark'] {
+  --bg-dark: hsl(0, 0%, 100%);
+  --bg: hsl(0, 0%, 95%);
+  --bg-light: hsl(0, 0%, 90%);
+
+  --border: hsl(0, 0%, 85%);
+  --highline: hsl(0, 0%, 85%);
+  --bottomline: hsl(0, 0%, 85%);
+
+  --text: hsl(0, 0%, 10%);
+  --text-muted: hsl(0, 0%, 25%);
+
+--primary-50: #fcf6f0;
+--primary-100: #f7e9dd;
+--primary-200: #eed0ba;
+--primary-300: #e5b698;
+--primary-400: #d68861;
+--primary: #cd6a42;
+--primary-600: #bf5437;
+--primary-700: #9f422f;
+--primary-800: #80372c;
+--primary-900: #682f26;
+--primary-950: #371713;
+
+
+
+  --red: #E63946;
 }
 
 * {
@@ -48,7 +86,8 @@ body * {
   font-size: 1.8rem;
 }
 
-button, a {
+button,
+a {
   background-color: transparent;
   border-style: none;
   display: flex;
@@ -91,4 +130,7 @@ label {
   font-size: 1.4rem;
 }
 
-html, body { height: 100%; }
+html,
+body {
+  height: 100%;
+}

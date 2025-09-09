@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-import { DaysOfTheWeekComponent } from "./sections/days-of-the-week/days-of-the-week.component";
-import { TasksListsComponent } from "./sections/tasks-lists/tasks-lists.component";
+import { NgClass } from '@angular/common';
+import { ButtonComponent } from "../../shared/ui/button/button.component";
+import { ThemeToggleBtnComponent } from "../../shared/ui/theme-toggle-btn/theme-toggle-btn.component";
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [DaysOfTheWeekComponent, TasksListsComponent],
+  imports: [NgClass, ButtonComponent, ThemeToggleBtnComponent, RouterOutlet],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })
@@ -13,36 +15,16 @@ export class DashboardComponent {
 
   sidebarBtns = [
     {
-      label: 'Links',
-      icon: 'link',
+      label: 'Habits',
+      icon: 'favorite',
     },
     {
-      label: 'Analytics',
-      icon: 'insights',
+      label: 'Notes',
+      icon: 'stylus_note',
     },
     {
-      label: 'Reports',
-      icon: 'bar_chart',
+      label: 'Account',
+      icon: 'person',
     },
-    {
-      label: 'Cutomers',
-      icon: 'group',
-    },
-    {
-      label: 'Settings',
-      icon: 'settings',
-    },
-    {
-      label: 'Tags',
-      icon: 'sell',
-    },
-    {
-      label: 'Events',
-      icon: 'calendar_today',
-    },
-    {
-      label: 'Support',
-      icon: 'support_agent',
-    }
   ];
 }

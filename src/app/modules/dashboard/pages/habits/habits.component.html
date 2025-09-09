@@ -1,0 +1,49 @@
+<div class="container gap6">
+  <div class="topBar">
+    <div class="layoutWidth flex justBetween flexWrap p6">
+      <h2 class="titleText">Habits</h2>
+      <app-button [label]="'Add habit'" [icon]="'add'" [style]="'filled'" />
+    </div>
+  </div>
+  <div class="layoutWidth">
+    <div class="habitList p6 flex flexCol itemsCenter" style="gap: 32px">
+      <div class="flex flexCol gap6 wFit yearContainer">
+        <div class="flex gap6 itemsCenter">
+          <div>
+            <span class="boldText"> Salir a caminar </span> <br />
+            <span class="mutedText smallText">
+              Por lo menos 4km al parque
+            </span>
+          </div>
+          <div class="flexGrow flex gap3">
+            <button class="btn-border p4 hFit">
+              <i class="material-symbols-rounded"> edit </i>
+            </button>
+            <button class="btn-border p4 hFit">
+              <i class="material-symbols-rounded"> note </i>
+            </button>
+          </div>
+          <div>
+            <span class="titleText">3/4</span>
+          </div>
+          <button class="btn-filled p4 hFit">
+            <i class="material-symbols-rounded"> add </i>
+          </button>
+        </div>
+        <div class="calendar">
+          @for (week of weeks; track $index) {
+          <div class="week">
+            @for (day of week; track $index) {
+            <div
+              class="day"
+              [ngClass]="day.level >= 0 ? 'level-' + day.level : 'empty'"
+              [title]="day.date | date : 'fullDate'"
+            ></div>
+            }
+          </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,6 +1,26 @@
-<div class="container hFull p6 bgDark">
-  <div class="navContainer wFull hFull bgDark card"></div>
-  <app-days-of-the-week />
-  <app-tasks-lists />
-  <div class="wFull hFull card bgDark"></div>
+<div class="dashboardContainer bg">
+  <aside [ngClass]="isSidebarOpen ? 'sideBarOpen' : ''">
+    <button class="btn-border p3 wFit" (click)="isSidebarOpen = !isSidebarOpen">
+      <i class="material-symbols-rounded">menu</i>
+    </button>
+    <div class="flex flexCol gap3 flexGrow">
+      @for (btn of sidebarBtns; track $index) {
+      <app-button
+        [label]="btn.label"
+        [icon]="btn.icon"
+        [style]="'sidebar'"
+        [showLabel]="isSidebarOpen ? true : false"
+      />
+      }
+    </div>
+    <div class="flex flexCol gap3">
+      <button class="p3 wFit">
+        <i class="material-symbols-rounded">settings</i>
+      </button>
+      <app-theme-toggle-btn />
+    </div>
+  </aside>
+  <main class="bgDark wFull hFull">
+    <router-outlet />
+  </main>
 </div>
